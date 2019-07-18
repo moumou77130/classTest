@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" media="screen">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="css/hamburgermenu.css" rel="stylesheet" media="screen"/>
+  <link rel="stylesheet" href="reset.css"/>
+  <link rel="stylesheet" href="dropdown.css"/>
+  <!-- <link rel="stylesheet" href="main2.css"/> -->
+  <style>
+	
+	ul li
+	{
+		
+	}   
+	.submenuA
+	{
+		background-color:black;
+	}
+	
+  </style>
+  <script>
+  function showSubmenu()
+  {
+	console.log("mouse enter");
+	var element = document.getElementsByClassName("submenuA");
+	console.log(element.length);
+	var i = 0;
+	for(i=0;i<element.length;i++)
+	{
+		element[i].style.background = 'yellow';
+	}
+	
+	console.log("event done");
+  }
+  function closeSubmenu()
+  {
+	console.log("mouse leave");
+	var element = document.getElementsByClassName("submenuA");
+	var i = 0;
+	console.log(element.length);
+	for(i=0;i<element.length;i++)
+	{
+		//console.log(element[i]);
+		element[i].style.background = 'black';
+	}
+	console.log("event done");
+  }
+  </script>
+</head>
+<body>
+   <div style="background-color:blue;">
+       <div style="background-color:red;width:50%;">1
+       </div>
+   </div>
+   <div style="background-color:black;">1</div>
+   <span  style="background-color:red;">111123</span>
+   <br><br><br>
+   <ul>
+		<li style="background-color:red;" onmouseenter="showSubmenu()" onmouseleave="closeSubmenu()" >A<li>
+		<li style="background-color:red;">B<li>
+		<li style="background-color:red;">C<li>
+   </ul>
+    <ul>
+		<li class="submenuA">A1<li>
+		<li style="background-color:red;">B1<li>
+		<li style="background-color:red;">C1<li>
+   </ul>
+   <ul>
+		<li class="submenuA">A1<li>
+		<li style="background-color:red;">B1<li>
+		<li style="background-color:red;">C1<li>
+   </ul>
+  
+   
+</body>
+</html>

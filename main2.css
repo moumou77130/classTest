@@ -1,0 +1,101 @@
+html { box-sizing: border-box; }
+*, *::before, *::after { box-sizing: inherit; }
+
+
+
+.flex-nav {
+    display: flex;
+    justify-content: center;
+	height:85px;
+	width:100%;
+	list-style: none;   /* 移除項目符號 */
+    opacity: 0.5;
+    position: fixed;
+}
+
+ul{
+    background-color: black;
+    list-style: none;   /* 移除項目符號 */
+    margin: 0;
+    padding: 0;
+	color:white;
+	
+}
+
+nav a {
+    color: inherit; /* 移除超連結顏色 */
+    display: block; /* 讓 <a> 填滿 <li> */
+    font-size: 1.2rem;
+    padding:0px 10px;
+    text-decoration: none;  /* 移除超連結底線 */
+	line-height:85px;
+	font-family:Helvetica, Arial, "微軟正黑體", Heiti TC, "メイリオ", sans-serif;
+	font-size:15px;
+}
+
+/* 滑鼠移到 <a> 時變成深底淺色 */
+nav li:hover {
+    background-color: rgb(115, 115, 115);
+    color: white;
+}
+.navMenu
+{
+	line-height:85px;
+	margin-left:30%;
+	
+}
+body
+{
+	background-color:black;
+	height:1000px;
+	
+}
+
+.submenu{
+    /* position: absolute; */
+    /* z-index: 999; */
+    /* /* left: 50%; */ 
+    /* top: 100%; */
+    /* padding: 35px 40px; */
+    /* box-sizing: border-box; */
+    /* background: rgba(20, 20, 20, 0.95); */
+    /* line-height: 24px; */
+    /* /* visibility: hidden; */ 
+    /* /* transition: all .5s; */ 
+	/* list-style: none; */
+    /* color:white;	 */
+	/* display: none; */
+	background-color:white;
+	
+}
+dropDown:hover{ /* 滑鼠滑入展開次選單*/
+        display: block;
+    }
+.dropDown
+{
+	
+}
+
+.logo 
+{
+	position: fixed;
+    z-index: 10;
+    left: 10%;
+}
+.navbar
+{
+	position: fixed;
+    z-index: 10;
+    left: 30%;
+}
+/* .submenu:hover > ul { /* 滑鼠滑入展開次選單*/ */
+        /* display: block; */
+    /* } */
+/* .inline-block-nav { */
+    /* text-align: center; */
+    /* font-size: 0;   /* 移除 <li> 之間的空隙 */ */
+/* } */
+
+/* .inline-block-nav > li { */
+    /* display: inline-block; */
+/* } */
